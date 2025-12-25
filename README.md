@@ -9,3 +9,33 @@ All dotfiles are in `dotfiles/`. Run `symlink-all.sh` to symlink each dotfile to
 ## Languages
 
 Contains information to get code environments up and running. For example, for Python I have a list of high-level packages that will automatically capture commonly used Python libraries if I install them into a `uv`-managed environment.
+
+# random stuff/workspace
+
+## TODO
+
+-   editors/: vscode/cursor
+    -   settings
+    -   extensions
+    -   user snippets
+-   brew casks??
+-   Brewfile caveats displayed? also, can we have better batching (rn is one by one)
+-   check that completions work properly -- rustup, fzf
+    -   same with shell integration for everything else
+
+## things to try
+
+-   more inlay hints for other languages?
+-   ruff/ty (currently trying it out)
+-   colorls vs eza vs lsd (currently using lsd)
+-   cpp
+    -   brew had `clangd-format`, `cppcheck`, `bear` (this was to get LSP stuff working with `make`)
+        maybe bring these back later if I do more cpp stuff
+
+## random brew packages
+
+-   `cloc`, `git-quick-stats`, `graphviz`, `rename`, `mas`
+
+# Notes
+
+-   `tree` is not needed if you have a modern `ls` replacement
