@@ -1,0 +1,18 @@
+[user]
+	name = Gilford Ting
+	email = gilfordting@gmail.com
+
+[core]
+	editor = code --wait
+
+[alias]
+	lol = log --graph --oneline --decorate --color --all
+
+[merge]
+	conflictstyle = diff3
+
+[init]
+	defaultBranch = main
+
+[credential]
+    helper = osxkeychain

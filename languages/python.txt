@@ -1,0 +1,16 @@
+torch
+jax
+transformers
+evaluate
+scikit-learn
+matplotlib
+ipykernel
+fastapi
+docker
+openai
+anthropic
+google-genai
+modal
+black
+isort
+autoflake
