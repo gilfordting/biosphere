@@ -3,7 +3,7 @@
 	email = gilfordting@gmail.com
 
 [core]
-	editor = code --wait
+	editor = cursor --wait
 
 [alias]
 	lol = log --graph --oneline --decorate --color --all

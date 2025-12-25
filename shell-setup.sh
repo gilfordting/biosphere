@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 # Before running this script, do two things:
-# - Run `xcode-select --install` to obtain git (necessary to get this repo).
+# - Run `xcode-select --install` to obtain git. Probably necessary to get this repo anyways.
 # - Download homebrew.
 
 # Show all commands; early exit for failures

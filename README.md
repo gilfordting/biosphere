@@ -31,6 +31,7 @@ Contains information to get code environments up and running. For example, for P
 -   cpp
     -   brew had `clangd-format`, `cppcheck`, `bear` (this was to get LSP stuff working with `make`)
         maybe bring these back later if I do more cpp stuff
+-   git diff viewers
 
 ## random brew packages
 
