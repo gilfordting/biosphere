@@ -29,7 +29,6 @@ source /opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-high
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # --- Plugins ---
-
 # zoxide (modern autojump)
 eval "$(zoxide init zsh)"
 alias j='z'
@@ -42,7 +41,15 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 # Setup advanced completions
 autoload -Uz compinit && compinit
 
-# --- Aliases --
+# --- Aliases and functions --
+cdp() {  # cd to parent
+  local levels=${1:-1}  # default value of 1
+  local cd_path=""  # this can't be called $path because it will conflict with PATH variable
+  for ((i=0; i<levels; i++)); do
+    cd_path="../$cd_path"
+  done
+  cd "$cd_path"
+}
 # git
 alias gs='git status'
 alias ga='git add'
