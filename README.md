@@ -33,6 +33,7 @@ Contains information to get code environments up and running. For example, for P
     -   brew had `clangd-format`, `cppcheck`, `bear` (this was to get LSP stuff working with `make`)
         maybe bring these back later if I do more cpp stuff
 -   git diff viewers
+-   lazygit (git TUI), delta (diff), jq (json), maccy (clipboard), iina (video), AltTab (tab switcher), starship (prompt)
 
 ## random brew packages
 

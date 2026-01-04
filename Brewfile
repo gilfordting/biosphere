@@ -1,6 +1,7 @@
 # Casks
 # TODO: check that these are auto_updating. If not, remove from list
 cask "raycast"
+cask "alt-tab"
 cask "rectangle"
 cask "keycastr"
 cask "jiggler"
