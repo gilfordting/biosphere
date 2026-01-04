@@ -9,6 +9,8 @@ Apps to install on a new system.
     -   Emoji picker: Option + Cmd + Space
 -   [Rectangle](https://rectangleapp.com/)
 -   [Jiggler](https://www.sticksoftware.com/software/Jiggler.html)
+-   [AltTab](https://alt-tab-macos.netlify.app/)
+    -   change shortcut to Cmd + Tab
 
 # Personal apps
 

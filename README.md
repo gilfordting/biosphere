@@ -23,6 +23,7 @@ Contains information to get code environments up and running. For example, for P
 -   check that completions work properly -- rustup, fzf
     -   same with shell integration for everything else
     -   docker and gh are installed with homebrew?
+-   vimrc
 
 ## things to try
 

@@ -1,5 +1,6 @@
 # Casks
 # TODO: check that these are auto_updating. If not, remove from list
+# (with `brew info`)
 cask "raycast"
 cask "alt-tab"
 cask "rectangle"

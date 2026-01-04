@@ -1,6 +1,15 @@
 #!/bin/bash
+
+# --backup flag
+BACKUP=true
+for arg in "$@"; do
+  case "$arg" in
+    --backup) BACKUP=true ;;
+    --backup=false) BACKUP=false ;;
+  esac
+done
+
 OLD_DOTFILES="dotfile_backups_$(date -u +"%Y%m%d%H%M%S")"
-mkdir $OLD_DOTFILES
 
 function backup_if_exists() {
     if [ -f $1 ];
@@ -14,8 +23,11 @@ function backup_if_exists() {
 }
 
 # Common conflicts
-backup_if_exists ~/.zshrc
-backup_if_exists ~/.gitconfig
+if [ "$BACKUP" = "true" ]; then
+  mkdir "$OLD_DOTFILES"
+  backup_if_exists ~/.zshrc
+  backup_if_exists ~/.gitconfig
+fi
 
 for dir in zsh p10k vim git; do
   stow -v --target=$HOME "$dir"
