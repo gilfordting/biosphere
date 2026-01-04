@@ -18,9 +18,9 @@ Contains information to get code environments up and running. For example, for P
     -   settings
     -   extensions
     -   user snippets
--   brew casks??
+-   brew casks?? check auto updating status
 -   Brewfile caveats displayed? also, can we have better batching (rn is one by one)
--   check that completions work properly -- rustup, fzf
+-   check that completions work properly -- rustup, fzf, docker, gh
     -   same with shell integration for everything else
 
 ## things to try
@@ -40,3 +40,15 @@ Contains information to get code environments up and running. For example, for P
 # Notes
 
 -   `tree` is not needed if you have a modern `ls` replacement
+
+# archive
+
+colorls:
+
+```sh
+brew install ruby rbenv ruby-build
+rbenv install ...
+rbenv global ...
+rbenv init
+gem install colorls
+```
