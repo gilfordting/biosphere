@@ -9,27 +9,29 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # --- PATH ---
+BREW="/opt/homebrew"  # $(brew --prefix)
 # Homebrew
-export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+export PATH="$BREW/bin:$BREW/sbin:$PATH"
 # Intel Homebrew (for dual-arch systems)
 export PATH="/usr/local/bin:/usr/local/opt/riscv-gnu-toolchain/bin:$PATH"
-# Cryptex system paths
-export PATH="/System/Cryptexes/App/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:$PATH"
 # Standard Unix paths
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # User-specific bins
 export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
+# Cryptex system paths
+CRYPTEX_BOOTSTRAP_DIR="/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr"
+export PATH="/System/Cryptexes/App/usr/bin:$CRYPTEX_BOOTSTRAP_DIR/local/bin:$CRYPTEX_BOOTSTRAP_DIR/bin:$CRYPTEX_BOOTSTRAP_DIR/appleinternal/bin:$PATH"
 # Coreutils (GNU)
-export PATH="/opt/homebrew/Cellar/coreutils/9.7/libexec/gnubin:$PATH"
+export PATH="$BREW/Cellar/coreutils/9.7/libexec/gnubin:$PATH"
 
 # --- FPATH ---
-fpath=(/opt/homebrew/share/zsh/site-functions $fpath)
-
+# Function paths (for completions)
+fpath=("$BREW/share/zsh/site-functions" $fpath)
 
 # --- Shell tools: autosuggestions, syntax highlighting, iTerm2 integration ---
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $BREW/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^[[Z' autosuggest-accept # Shift + Tab
-source /opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $BREW/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # --- Plugins ---
@@ -44,7 +46,7 @@ alias lt='lsd --group-directories-first --tree'
 eval "$(fnm env --use-on-cd --shell zsh)"
 # fzf shell integration
 source <(fzf --zsh)
-# Setup advanced completions
+# setup advanced completions
 autoload -Uz compinit && compinit
 
 # --- Aliases and functions --
@@ -74,18 +76,18 @@ alias ni='npm install'
 
 # --- Class-specific commands ---
 
-# 6.205
-alias 6205_env='source ~/6205_python/bin/activate'
-alias fpgacompile='lab-bc build . build.tcl' # run in /labXX
-alias fpgaupload='openFPGALoader -b arty_s7_50 obj/final.bit' # run in /labXX
+# # 6.205
+# alias 6205_env='source ~/6205_python/bin/activate'
+# alias fpgacompile='lab-bc build . build.tcl' # run in /labXX
+# alias fpgaupload='openFPGALoader -b arty_s7_50 obj/final.bit' # run in /labXX
 
-# 6.S894
-alias telerun='uvx telerun'
-alias trs='telerun submit'
-alias trss='telerun submit -s'
-alias trsf='telerun submit --force'
+# # 6.S894
+# alias telerun='uvx telerun'
+# alias trs='telerun submit'
+# alias trss='telerun submit -s'
+# alias trsf='telerun submit --force'
 
-# 6.181
-alias qemuv='qemu-system-riscv64'
-alias gccv='riscv64-unknown-elf-gcc'
-alias gdbv='riscv64-elf-gdb'
+# # 6.181
+# alias qemuv='qemu-system-riscv64'
+# alias gccv='riscv64-unknown-elf-gcc'
+# alias gdbv='riscv64-elf-gdb'
