@@ -31,6 +31,7 @@ brew "stow"     # symlink management
 brew "fzf"
 brew "fd"       # better `find`
 brew "ripgrep"  # better `grep`
+brew "trash"
 
 # Command-line utilities
 brew "tmux"
