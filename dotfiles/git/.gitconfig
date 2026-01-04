@@ -4,6 +4,7 @@
 
 [core]
 	editor = cursor --wait
+	excludesfile = ~/.gitignore_global
 
 [alias]
 	lol = log --graph --oneline --decorate --color --all
