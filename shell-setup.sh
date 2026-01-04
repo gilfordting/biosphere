@@ -14,8 +14,9 @@ touch ~/.hushlogin
 # Install all homebrew packages in Brewfile
 brew bundle -v
 
-# Install Rust separately
+# Install rustup, Claude Code separately
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl -fsSL https://claude.ai/install.sh | bash
 
 # Make coding workspace
 mkdir -p ~/Documents/dev

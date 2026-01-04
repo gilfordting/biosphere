@@ -1,19 +1,19 @@
 [user]
-	name = Gilford Ting
-	email = gilfordting@gmail.com
+name = Gilford Ting
+email = gilfordting@gmail.com
 
 [core]
-	editor = cursor --wait
-	excludesfile = ~/.gitignore_global
+editor = cursor --wait
+excludesfile = ~/.gitignore_global
 
 [alias]
-	lol = log --graph --oneline --decorate --color --all
+lol = log --graph --oneline --decorate --color --all
 
 [merge]
-	conflictstyle = diff3
+conflictstyle = diff3
 
 [init]
-	defaultBranch = main
+defaultBranch = main
 
 [credential]
-    helper = osxkeychain
+helper = osxkeychain

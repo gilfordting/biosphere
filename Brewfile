@@ -1,11 +1,11 @@
 # Casks
-# TODO: check that these are auto_updating. If not, remove from list
-# (with `brew info`)
+# all of these are auto-updating and not tracked by Homebrew;
+# so this is for ease of installation
+
 cask "raycast"
 cask "alt-tab"
 cask "rectangle"
 cask "keycastr"
-cask "jiggler"
 cask "stats"
 cask "iterm2"
 cask "google-chrome"
@@ -18,7 +18,7 @@ cask "visual-studio-code"
 cask "cursor"
 cask "chatgpt"
 cask "claude"
-cask "claude-code"
+cask "jiggler" # doesn't auto update, but not released often
 
 # zsh environment
 brew "powerlevel10k"
