@@ -20,8 +20,9 @@ Contains information to get code environments up and running. For example, for P
     -   user snippets
 -   brew casks?? check auto updating status
 -   Brewfile caveats displayed? also, can we have better batching (rn is one by one)
--   check that completions work properly -- rustup, fzf, docker, gh
+-   check that completions work properly -- rustup, fzf
     -   same with shell integration for everything else
+    -   docker and gh are installed with homebrew?
 
 ## things to try
 

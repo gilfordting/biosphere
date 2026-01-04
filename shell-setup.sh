@@ -35,3 +35,9 @@ cd ..
 
 # TODO set up:
 # - various settings, like vscode/cursor
+
+# Commands after:
+# gh auth login
+# rustup-init
+# rustup completions zsh > $(brew --prefix)/share/zsh/site-functions/_rustup
+# tldr --update

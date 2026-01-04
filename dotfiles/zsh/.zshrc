@@ -22,6 +22,10 @@ export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
 # Coreutils (GNU)
 export PATH="/opt/homebrew/Cellar/coreutils/9.7/libexec/gnubin:$PATH"
 
+# --- FPATH ---
+fpath=(/opt/homebrew/share/zsh/site-functions $fpath)
+
+
 # --- Shell tools: autosuggestions, syntax highlighting, iTerm2 integration ---
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^[[Z' autosuggest-accept # Shift + Tab
@@ -38,6 +42,8 @@ alias la='lsd -A --group-directories-first'
 alias lt='lsd --group-directories-first --tree'
 # fnm instead of nvm
 eval "$(fnm env --use-on-cd --shell zsh)"
+# fzf shell integration
+source <(fzf --zsh)
 # Setup advanced completions
 autoload -Uz compinit && compinit
 
