@@ -15,10 +15,8 @@ Contains information to get code environments up and running. For example, for P
 ## TODO
 
 -   editors/: vscode/cursor
-    -   settings
     -   extensions
     -   user snippets
--   brew casks?? check auto updating status
 -   Brewfile caveats displayed? also, can we have better batching (rn is one by one)
 -   check that completions work properly -- rustup, fzf
     -   same with shell integration for everything else
@@ -28,13 +26,12 @@ Contains information to get code environments up and running. For example, for P
 ## things to try
 
 -   more inlay hints for other languages?
--   ruff/ty (currently trying it out)
 -   colorls vs eza vs lsd (currently using lsd)
 -   cpp
     -   brew had `clangd-format`, `cppcheck`, `bear` (this was to get LSP stuff working with `make`)
         maybe bring these back later if I do more cpp stuff
 -   git diff viewers
--   lazygit (git TUI), delta (diff), jq (json), maccy (clipboard), iina (video), AltTab (tab switcher), starship (prompt)
+-   lazygit (git TUI), delta (diff), jq (json), maccy (clipboard), iina (video), starship (prompt)
 
 ## random brew packages
 
