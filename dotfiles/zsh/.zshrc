@@ -62,6 +62,7 @@ cdp() {  # cd to parent
 alias gs='git status'
 alias gu='git pull'
 alias ga='git add'
+alias gaa='git add --all'
 alias gc='git commit -m'
 alias gp='git push'
 alias gl='git lol'

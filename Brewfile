@@ -1,4 +1,5 @@
 # Casks
+# TODO: check that these are auto_updating. If not, remove from list
 cask "raycast"
 cask "rectangle"
 cask "keycastr"
@@ -47,7 +48,6 @@ brew "ncdu"
 # Programming: git, languages, package managers, containers
 brew "gh"
 brew "python"
-brew "rustup"
 brew "go"
 brew "uv"
 brew "fnm"

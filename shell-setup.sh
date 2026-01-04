@@ -14,6 +14,9 @@ touch ~/.hushlogin
 # Install all homebrew packages in Brewfile
 brew bundle -v
 
+# Install Rust separately
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 # Make coding workspace
 mkdir -p ~/Documents/dev
 
@@ -33,6 +36,5 @@ cd ..
 
 # Commands after:
 # gh auth login
-# rustup-init
 # rustup completions zsh > $(brew --prefix)/share/zsh/site-functions/_rustup
 # tldr --update
