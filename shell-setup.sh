@@ -11,6 +11,11 @@ set -e
 # On MacOS, disables login message when starting a new terminal
 touch ~/.hushlogin
 
+# git
+xcode-select --install
+# homebrew
+curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
+
 # Install all homebrew packages in Brewfile
 brew bundle -v
 
@@ -28,10 +33,5 @@ cd dotfiles/
 ./symlink-all.sh
 cd ..
 
-# Install Claude Code (TODO: use brew cask?)
-curl -fsSL https://claude.ai/install.sh | bash
-
-
 # TODO set up:
-# - dotfiles, symlinks?
 # - various settings, like vscode/cursor
