@@ -24,7 +24,7 @@ Various OS settings to toggle on new systems.
 -   Screen Saver
     -   shuffle all
 -   cmd shift 5: save screenshots to clipboard
--   Sound --> play user interface sound effects
+-   Sound --> play user interface sound effects off, alert volume 0
 
 # Notes
 
