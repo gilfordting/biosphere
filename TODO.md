@@ -38,6 +38,8 @@ brew --prefix
 ./shell-setup.sh
 ```
 
+- Run `p10k configure` to be prompted to download Meslo fonts
+
 # Other stuff
 
 -   Generate SSH keys and add them to Github

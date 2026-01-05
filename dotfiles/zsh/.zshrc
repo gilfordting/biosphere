@@ -1,3 +1,5 @@
+BREW="/opt/homebrew"  # $(brew --prefix)
+
 # --- Powerlevel10k prompt ---
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -5,22 +7,16 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+source $BREW/share/powerlevel10k/powerlevel10k.zsh-theme
+# source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # --- PATH ---
-BREW="/opt/homebrew"  # $(brew --prefix)
-# Homebrew
-export PATH="$BREW/bin:$BREW/sbin:$PATH"
-# Intel Homebrew (for dual-arch systems)
-export PATH="/usr/local/bin:/usr/local/opt/riscv-gnu-toolchain/bin:$PATH"
-# Standard Unix paths
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
-# User-specific bins
-export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
-# Cryptex system paths
-CRYPTEX_BOOTSTRAP_DIR="/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr"
-export PATH="/System/Cryptexes/App/usr/bin:$CRYPTEX_BOOTSTRAP_DIR/local/bin:$CRYPTEX_BOOTSTRAP_DIR/bin:$CRYPTEX_BOOTSTRAP_DIR/appleinternal/bin:$PATH"
+eval "$($BREW/bin/brew shellenv)"
+# User-specific binaries
+export PATH="$HOME/.local/bin:$PATH"
+# RISC-V GNU toolchain
+export PATH="/usr/local/opt/riscv-gnu-toolchain/bin:$PATH"
 # Coreutils (GNU)
 export PATH="$BREW/Cellar/coreutils/9.7/libexec/gnubin:$PATH"
 

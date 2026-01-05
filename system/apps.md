@@ -8,6 +8,8 @@ Apps to install on a new system.
     -   Change shortcut to Cmd + Space
     -   Emoji picker: Option + Cmd + Space
 -   [Rectangle](https://rectangleapp.com/)
+    -   launch on login
+    -   check for updates automatically
 -   [Jiggler](https://www.sticksoftware.com/software/Jiggler.html)
 -   [AltTab](https://alt-tab-macos.netlify.app/)
     -   change shortcut to Cmd + Tab
@@ -31,11 +33,13 @@ Apps to install on a new system.
         -   Toggle left/right sidebar with Cmd + \[, \]
 -   [Todoist](https://www.todoist.com/downloads)
 -   [Slack](https://slack.com/downloads/mac)
+    -   preferences --> messages and media --> emoji --> convert typed.. off
 -   [Zoom](https://zoom.us/download)
 
 # Coding
 
 -   [iTerm2](https://iterm2.com/) with settings:
+    -   iterm2 --> install shell integration
     -   Profiles
         -   Terminal
             -   unlimited scrollback
