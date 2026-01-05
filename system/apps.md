@@ -1,6 +1,7 @@
 Apps to install on a new system.
 
--   [Google Chrome](https://www.google.com/chrome/)
+-   [Google Chrome](https://www.google.com/chrome/)'
+    -   Gmail: turn on keyboard shortcuts (general settings)
 
 # System utilities
 
