@@ -32,6 +32,10 @@ Contains information to get code environments up and running. For example, for P
         maybe bring these back later if I do more cpp stuff
 -   git diff viewers
 -   lazygit (git TUI), delta (diff), jq (json), maccy (clipboard), iina (video), starship (prompt)
+-   `zi` (zoxide + fzf)
+-   fzf
+    -   ctrl+T to search files
+    -   ctrl+R for command history
 
 ## random brew packages
 
