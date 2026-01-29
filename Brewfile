@@ -16,6 +16,7 @@ cask "zoom"
 cask "todoist-app"
 cask "visual-studio-code"
 cask "cursor"
+cask "docker-desktop"
 cask "chatgpt"
 cask "claude"
 cask "jiggler" # doesn't auto update, but not released often

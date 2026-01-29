@@ -14,6 +14,8 @@ Apps to install on a new system.
 -   [Jiggler](https://www.sticksoftware.com/software/Jiggler.html)
 -   [AltTab](https://alt-tab-macos.netlify.app/)
     -   change shortcut to Cmd + Tab
+-   Stats
+    -   open on login
 
 # Personal apps
 
@@ -28,6 +30,7 @@ Apps to install on a new system.
             -   some of these snippets are annoying
         -   Smart Typography (for em dashes)
             -   also some annoying snippets here
+            -   skip en dash ON
         -   Paste URL into selection
         -   Paste image rename
     -   Hotkeys
@@ -41,6 +44,11 @@ Apps to install on a new system.
 
 -   [iTerm2](https://iterm2.com/) with settings:
     -   iterm2 --> install shell integration
+    -   General
+        -   Selection
+            -   Clicking on a command selects it to restrict Find and Filter OFF
+        -   Closing
+            -   uncheck confirm before closing
     -   Profiles
         -   Terminal
             -   unlimited scrollback

@@ -62,6 +62,8 @@ alias gaa='git add --all'
 alias gc='git commit -m'
 alias gp='git push'
 alias gl='git lol'
+alias gb='git branch'
+alias gd='git diff'
 # Code editors
 alias c='cursor'
 # uv

@@ -6,10 +6,3 @@ Host github.com
 Host athena
     HostName athena.dialup.mit.edu
     User gting
-
-Host modal-dev
-    HostName ec2-3-235-150-22.compute-1.amazonaws.com
-    User ec2-user
-    ForwardAgent yes
-    LocalForward 7601 localhost:7601
-    IdentityFile ~/.aws/keypairs/gilford-modal.pem
