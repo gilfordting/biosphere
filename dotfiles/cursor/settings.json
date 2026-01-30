@@ -2,8 +2,6 @@
     // Editor
     "window.zoomLevel": 1,
     "workbench.colorTheme": "Catppuccin Frappé",
-    // "workbench.sideBar.location": "right",
-    // "editor.fontFamily": "FiraCode-Retina",
     "terminal.integrated.stickyScroll.enabled": true,
     "editor.wordWrap": "on",
     "editor.inlayHints.enabled": "on",
@@ -13,13 +11,13 @@
     "explorer.confirmDragAndDrop": false,
     // Terminal
     "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontFamily": "MesloLGS NF", // this is installed with p10k
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     // Formatting
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     // turn this off for now?
-    // "editor.formatOnSaveMode": "modifications",
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
     "prettier.tabWidth": 4,
     // Security
     "security.workspace.trust.untrustedFiles": "open",
@@ -95,6 +93,9 @@
     "rust-analyzer.check.command": "clippy",
     "rust-analyzer.checkOnSave": true,
     // Other languages
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
     "[jsonnet]": {
         "editor.defaultFormatter": "Grafana.vscode-jsonnet"
     },
@@ -112,6 +113,7 @@
     "[ignore]": {
         "editor.defaultFormatter": "foxundermoon.shell-format"
     },
+    
 
     "makefile.configureOnOpen": true,
     "cmake.configureOnOpen": true,
@@ -121,5 +123,7 @@
         "*.h": "c",
         "string_view": "c"
     },
-    "claudeCode.preferredLocation": "panel"
+    "claudeCode.preferredLocation": "panel",
+    "window.commandCenter": true,
+    "cursorpyright.analysis.autoImportCompletions": true,
 }
