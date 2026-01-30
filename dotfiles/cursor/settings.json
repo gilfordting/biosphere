@@ -125,5 +125,5 @@
     },
     "claudeCode.preferredLocation": "panel",
     "window.commandCenter": true,
-    "cursorpyright.analysis.autoImportCompletions": true,
+    "cursorpyright.analysis.autoImportCompletions": true
 }
