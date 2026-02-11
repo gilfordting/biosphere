@@ -27,7 +27,7 @@
 
     // Python
     "[python]": {
-        "editor.defaultFormatter": "charliermarsh.ruff"
+        "editor.defaultFormatter": "charliermarsh.ruff",
         // "editor.codeActionsOnSave": {
         //     "source.organizeImports": "explicit", // ruff needs this
         //     "source.fixAll": "explicit" // maybe try this out later?
@@ -46,21 +46,21 @@
     "jupyter.widgetScriptSources": ["jsdelivr.com", "unpkg.com"],
     // Verilog
     "[systemverilog]": {
-        "editor.defaultFormatter": "mshr-h.veriloghdl"
+        "editor.defaultFormatter": "mshr-h.veriloghdl",
     },
     "verilog.linting.linter": "iverilog",
     "verilog.linting.iverilog.arguments": "-i -g2012",
     // C/C++
     "[c][cpp]": {
-        "editor.formatOnSaveMode": "modifications"
+        "editor.formatOnSaveMode": "modifications",
     },
     "[c]": {
         "editor.defaultFormatter": "ms-vscode.cpptools",
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
     },
     "[cuda-cpp]": {
         "editor.defaultFormatter": "ms-vscode.cpptools",
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
     },
     "C_Cpp.default.includePath": ["/opt/cuda-12.8-headers/include"],
     "C_Cpp.default.defines": ["__CUDACC__"],
@@ -73,47 +73,46 @@
     "C_Cpp.inlayHints.parameterNames.enabled": true,
     // Go
     "[go]": {
-        "editor.defaultFormatter": "golang.go"
+        "editor.defaultFormatter": "golang.go",
     },
     "gopls": { "ui.semanticTokens": true },
     "go.toolsManagement.autoUpdate": true,
     // JS/TS
     "javascript.updateImportsOnFileMove.enabled": "always",
     "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     // Rust
     "[rust]": {
-        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
     },
     "files.readonlyInclude": {
         "**/.cargo/registry/src/**/*.rs": true,
-        "**/lib/rustlib/src/rust/library/**/*.rs": true
+        "**/lib/rustlib/src/rust/library/**/*.rs": true,
     },
     "rust-analyzer.check.command": "clippy",
     "rust-analyzer.checkOnSave": true,
     // Other languages
     "[markdown]": {
-        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     },
     "[jsonnet]": {
-        "editor.defaultFormatter": "Grafana.vscode-jsonnet"
+        "editor.defaultFormatter": "Grafana.vscode-jsonnet",
     },
     "[yaml]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml"
+        "editor.defaultFormatter": "redhat.vscode-yaml",
     },
     // needs older version of shell formatter
     "shellformat.path": "/opt/homebrew/bin/shfmt",
     "[shellscript]": {
-        "editor.defaultFormatter": "foxundermoon.shell-format"
+        "editor.defaultFormatter": "foxundermoon.shell-format",
     },
     "[properties]": {
-        "editor.defaultFormatter": "foxundermoon.shell-format"
+        "editor.defaultFormatter": "foxundermoon.shell-format",
     },
     "[ignore]": {
-        "editor.defaultFormatter": "foxundermoon.shell-format"
+        "editor.defaultFormatter": "foxundermoon.shell-format",
     },
-    
 
     "makefile.configureOnOpen": true,
     "cmake.configureOnOpen": true,
@@ -121,9 +120,9 @@
         "*.ms": "BluespecSystemVerilog",
         "*.catsoop": "markdown",
         "*.h": "c",
-        "string_view": "c"
+        "string_view": "c",
     },
     "claudeCode.preferredLocation": "panel",
     "window.commandCenter": true,
-    "cursorpyright.analysis.autoImportCompletions": true
+    "cursorpyright.analysis.autoImportCompletions": true,
 }
