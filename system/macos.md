@@ -2,13 +2,13 @@ Various OS settings to toggle on new systems.
 
 # Settings
 
+- Menu Bar
+    - Clock --> Display the time with seconds: on
+    - Battery --> Show Percentage: on
 - Desktop & Dock
     - Minimize windows into application icon: on
     - Show suggested and recent apps in Dock: off
     - Default web browser: chrome
-- Menu Bar
-    - Clock --> Display the time with seconds: on
-    - Battery --> Show Percentage: on
 - Wallpaper
     - Shuffle Aerials: Shuffle All
 - Sound
